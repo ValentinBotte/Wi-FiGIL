@@ -20,7 +20,7 @@ SET time_zone = "+00:00";
 -- Base de données: `acceswifi`
 --
 DROP DATABASE IF EXISTS `acceswifi`;
-CREATE DATABASE IF NOT EXISTS `acceswifi` 
+CREATE DATABASE IF NOT EXISTS `acceswifi`; 
 USE `acceswifi`;
 
 -- --------------------------------------------------------
@@ -38,8 +38,8 @@ CREATE TABLE IF NOT EXISTS `port_etudiant` (
   `mdp` varchar(32) NOT NULL,
   `numexam` varchar(16) DEFAULT NULL,
   `valide` varchar(1) NOT NULL DEFAULT 'O',
-  PRIMARY KEY (`num`)
-  KEY `ietudgrou` (`numGroupe`);
+  PRIMARY KEY (`num`),
+  KEY `ietudgrou` (`numGroupe`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
 --
@@ -71,6 +71,29 @@ CREATE TABLE IF NOT EXISTS `port_professeur` (
 --
 
 INSERT INTO `port_professeur` (`num`, `nom`, `prenom`, `mel`, `mdp`, `niveau`, `valide`) VALUES(1, 'Admin', 'Admin', 'dylanraimon@gmail.com', 'admin!', 1, 'O');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `peripherique`
+--
+
+CREATE TABLE IF NOT EXISTS `peripherique` (
+  `num` int(11) NOT NULL AUTO_INCREMENT,
+  `num_user` int(11) NOT NULL,
+  `libelle` varchar(128) NOT NULL,
+  `mac` varchar(12) NOT NULL,
+  `date_ajout` DATETIME NOT NULL,
+  PRIMARY KEY (`num`),
+  CONSTRAINT FK_PERIPHE_ETU FOREIGN KEY (`num_user`)
+	  REFERENCES `port_etudiant` (`num`) 
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `peripherique`
+--
+
+INSERT INTO `peripherique` (`num`, `num_user`, `libelle`, `mac`, `date_ajout`) VALUES(1, 1, 'portable', 'F8CF12B46A6F', '2016-05-08 00:00:00');
 
 -- --------------------------------------------------------
 COMMIT;
