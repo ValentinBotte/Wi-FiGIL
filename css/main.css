@@ -1,5 +1,18 @@
+body {
+  background-color: #ff4814;
+}
+#container{
+    margin-top: calc(50vh - 211px);
+}
 
-.containGhost {
+.containerGhostCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -64.5px;
+  margin-top: -85.5px;
+}
+.containerGhost {
   width:31%;
   margin-bottom: 15%;
 }
