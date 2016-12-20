@@ -15,6 +15,23 @@
         
             $response_array['response'] = "Périphérique ajouté.";   // Si ok
             $response_array['status'] = 'success';
+            
+            // On envoie le mail
+            mail($_SESSION['user']['mel'], "Demande d'accès au Wi-Fi", 
+            "Bonjour " . $_SESSION['user']['prenom'] . ",
+            Nous vous confirmons que vous avez effectué une demande d'accès aux bornes Wi-Fi du BTS SIO.
+            Rappel de vos informations :
+
+            Nom : " . $_SESSION['user']['nom'] . "
+            Prénom : " . $_SESSION['user']['prenom'] . "
+            Email : " . $_SESSION['user']['mel'] . "
+            Groupe d'utilisateur : " . $_SESSION['user']['numGroup'] . "
+            Adresse MAC : " . $_POST['mac'] . "
+
+            Dès lors que votre demande sera traité, vous recevrez un email de confirmation avec les informations de connexion.
+
+            Cordialement.");
+            
       
         }catch(PDOException $e){
             $response_array['response'] = "Une erreur est survenu.";   // Si erreur

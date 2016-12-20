@@ -35,8 +35,9 @@ $(function() {
     // Ajout d'un peripherique
 
     $("#bt_ajout").click(function() {
-        $.post( "../php/ajax/ajoutPeripherique.php", { libelle: $('#libelle').val(), mac: $('#mac').val() })
-          .done(function( data ) {
+        if($('#libelle').val().length > 0 && $('#mac').val().length > 0){
+            $.post( "../php/ajax/ajoutPeripherique.php", { libelle: $('#libelle').val(), mac: $('#mac').val() })
+            .done(function( data ) {
             if(data.status === "success"){
                     Materialize.toast(data.response, 4000);
                     refreshPeripheriquesTable();
@@ -46,5 +47,9 @@ $(function() {
                 }else{
                     Materialize.toast(data.response, 4000);
                 }  
-        });
+            });
+        }else{
+            Materialize.toast("Informations incorrect.", 4000);
+        }
+        
     });
