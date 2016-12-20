@@ -10,12 +10,14 @@
             $req->execute();    
 
             $user = $req->fetch();
+            $req->closeCursor();
             
             if($user)
             {
                 // Redirection pour un utilistaur
                 if(strcmp($user['valide'], 'O') == 0){
                      $_SESSION['user'] = $user;
+                     $_SESSION['grade'] = 0;
                      header('Location: utilisateur/panel.php');
                 }else{
                     $_SESSION['flash']['erreur'] = "Compte invalide.";
@@ -31,12 +33,20 @@
 
                 $user = $req->fetch();
                 $_SESSION['user'] = $user;
+                $req->closeCursor();
                 
                 if($user){
                     
                     if(strcmp($user['valide'], 'O') == 0){
-                     $_SESSION['user'] = $user;
-                     header('Location: professeur/panel.php');
+                        $_SESSION['user'] = $user;
+                        
+                        if($user['niveau'] == 1){
+                            $_SESSION['grade'] = 2;
+                        }else{
+                            $_SESSION['grade'] = 1;
+                        }
+                        
+                        header('Location: professeur/panel.php');
                     }else{
                         $_SESSION['flash']['erreur'] = "Compte invalide.";
                     }

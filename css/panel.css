@@ -1,0 +1,21 @@
+body{
+    background-color: #fafafa;
+}
+
+nav{
+    background-color: #ff4814;
+}
+
+.btn-large{
+      background-color: #ff4814;  
+}
+
+.btn-large:hover{
+      background-color: #ff673d;  
+}
+
+.container{
+    margin-top: 50px;
+}
+
+.material-icons.red900 { color: #B71C1C; }
