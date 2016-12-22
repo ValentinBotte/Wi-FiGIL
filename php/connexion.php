@@ -32,21 +32,25 @@
                 $req->execute();    
 
                 $user = $req->fetch();
-                $_SESSION['user'] = $user;
                 $req->closeCursor();
                 
                 if($user){
                     
                     if(strcmp($user['valide'], 'O') == 0){
+                        
                         $_SESSION['user'] = $user;
                         
                         if($user['niveau'] == 1){
                             $_SESSION['grade'] = 2;
+                            
+                            header('Location: administrateur/panel.php');
                         }else{
                             $_SESSION['grade'] = 1;
+                            
+                            header('Location: utilisateur/panel.php');
                         }
                         
-                        header('Location: professeur/panel.php');
+                        
                     }else{
                         $_SESSION['flash']['erreur'] = "Compte invalide.";
                     }

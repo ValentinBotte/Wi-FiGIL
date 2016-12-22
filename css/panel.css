@@ -18,4 +18,7 @@ nav{
     margin-top: 50px;
 }
 
-.material-icons.red900 { color: #B71C1C; }
+.material-icons.red900 { 
+    color: #B71C1C; 
+    cursor: pointer; 
+}

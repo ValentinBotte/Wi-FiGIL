@@ -2,6 +2,7 @@ $(function() {
     
     //Chargement de la page
     refreshPeripheriquesTable();
+    
 
 });
 
@@ -10,7 +11,7 @@ $(function() {
     // Charge la liste des peripheriques
     
     function refreshPeripheriquesTable(){
-        $.post( "../php/ajax/refreshPeripheriques.php")
+        $.post( "../php/ajax/utilisateur/refreshPeripheriques.php")
           .done(function( data ) {
                 $('tbody').html(data);
           });
@@ -20,7 +21,7 @@ $(function() {
     // Suppression d'un peripherique
 
     function supprPeripherique(id, elem){   
-        $.post( "../php/ajax/supprPeripherique.php", { id: id })
+        $.post( "../php/ajax/utilisateur/supprPeripherique.php", { id: id })
           .done(function( data ) {
                 if(data.status === "success"){
                     Materialize.toast(data.response, 4000);
@@ -36,7 +37,7 @@ $(function() {
 
     $("#bt_ajout").click(function() {
         if($('#libelle').val().length > 0 && $('#mac').val().length > 0){
-            $.post( "../php/ajax/ajoutPeripherique.php", { libelle: $('#libelle').val(), mac: $('#mac').val() })
+            $.post( "../php/ajax/utilisateur/ajoutPeripherique.php", { libelle: $('#libelle').val(), mac: $('#mac').val() })
             .done(function( data ) {
             if(data.status === "success"){
                     Materialize.toast(data.response, 4000);

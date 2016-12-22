@@ -1,18 +1,18 @@
 <?php
     session_start();
 
-    require_once('../bd.php');
+    require_once('../../bd.php');
     header('Content-type: application/json');
 
 
     try{
-        $req = $bd->prepare('DELETE FROM PERIPHERIQUE WHERE NUM=:id AND NUM_USER=:id_user');
-        $req->bindParam(':id', $_POST['id']);
-        $req->bindParam(':id_user' , $_SESSION['user']['num']);
+        
+        $req = $bd->prepare("DELETE FROM PORT_ETUDIANT WHERE NUM=:id_user");
+        $req->bindParam(':id_user' , $_POST['id']);
 
         $req->execute();
         
-        $response_array['response'] = "Périphérique supprimé.";   // Si ok
+        $response_array['response'] = "Utilisateur supprimé.";   // Si ok
         $response_array['status'] = 'success';
         
     }catch(PDOException $e){

@@ -1,13 +1,22 @@
 <?php
     session_start();
 
-    require_once('../bd.php');
+    require_once('../../bd.php');
     header('Content-type: application/json');
 
     if(checkMac($_POST['mac'])){
         try{
-            $req = $bd->prepare('INSERT INTO PERIPHERIQUE (num, num_user, libelle, mac, date_ajout, etat) VALUES (null, :id_user, :libelle, :mac, null, 0)');
-            $req->bindParam(':id_user' , $_SESSION['user']['num']);
+            
+            if($_SESSION['grade'] == 0){
+                $sql = 'INSERT INTO PERIPHERIQUE (num, num_user, num_prof, libelle, mac, date_ajout, etat) VALUES (null, :id_user, null, :libelle, :mac, null, 0)';
+                $param = ':id_user';
+            }else{
+                $sql = 'INSERT INTO PERIPHERIQUE (num, num_user, num_prof, libelle, mac, date_ajout, etat) VALUES (null, null, :id_prof, :libelle, :mac, null, 0)';
+                $param = ':id_prof';
+            }
+            
+            $req = $bd->prepare($sql);
+            $req->bindParam($param, $_SESSION['user']['num']);
             $req->bindParam(':libelle', $_POST['libelle']);
             $req->bindParam(':mac', convertMac($_POST['mac']));
 
