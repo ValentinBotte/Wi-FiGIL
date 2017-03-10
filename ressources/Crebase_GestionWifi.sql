@@ -90,6 +90,7 @@ CREATE TABLE IF NOT EXISTS `peripherique` (
   `libelle` varchar(128) NOT NULL,
   `mac` varchar(12) NOT NULL,
   `date_ajout` DATETIME NOT NULL,
+  `etat` INTEGER DEFAULT 0 NOT NULL,
   PRIMARY KEY (`num`),
   CONSTRAINT FK_PERIPHE_ETU FOREIGN KEY (`num_user`)
 	  REFERENCES `port_etudiant` (`num`)

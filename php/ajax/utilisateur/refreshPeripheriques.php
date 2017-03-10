@@ -19,7 +19,7 @@
 
       foreach($req->fetchAll() as $peripherique){
 
-        if($peripherique[etat] == 1){ //En attente
+        if($peripherique['etat'] == 1){ //En attente
             $etat = '<i class="material-icons">done</i>';
         }else{ //Valide
             $etat = '<i class="material-icons">hourglass_empty</i>';
