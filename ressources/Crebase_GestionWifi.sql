@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `port_professeur` (
 
 INSERT INTO `port_professeur` (`num`, `nom`, `prenom`, `mel`, `mdp`, `niveau`, `valide`) VALUES
 (1, 'admin', '', 'jgil@ac-nice.fr', 'fcdc73f20acb6df693f000ce101b4f04', 0, 'O'),
-(2, 'raimon', 'Dylan', 'dydy@gmail.com', '3e0fcf194a1f41068953f5f17ee45fde', 0, 'O');
+(2, 'raimon', 'Dylan', 'dydy@gmail.com', '3e0fcf194a1f41068953f5f17ee45fde', 0, 'O'),
 (6, 'GIL', 'José', 'Jose-Ambrosio.Gil@ac-nice.fr', 'fcdc73f20acb6df693f000ce101b4f04', 1, 'O');
 
 -- --------------------------------------------------------
