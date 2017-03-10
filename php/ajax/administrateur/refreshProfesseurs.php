@@ -10,14 +10,16 @@
 
           foreach($req->fetchAll() as $professeur){
 
-            if($professeur[valide] == "O"){ //En attente
+            if($professeur['valide'] == "O"){ //En attente
                 $etat = '<i class="material-icons">done</i>';
             }else{ //Valide
                 $etat = '<i class="material-icons">hourglass_empty</i>';
             }
 
-            if($professeur[niveau] == 1){ 
+            if($professeur['niveau'] == 1){
                 $niveau = 'ADMIN';
+            }else{
+                $niveau = 'PROF';
             }
 
             echo "<tr>

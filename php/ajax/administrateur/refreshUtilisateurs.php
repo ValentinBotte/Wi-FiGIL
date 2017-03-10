@@ -9,7 +9,7 @@
 
           foreach($req->fetchAll() as $etudiant){
 
-            if($etudiant[valide] == "O"){ //En attente
+            if($etudiant['valide'] == "O"){ //En attente
                 $etat = true;
             }else{ //Valide
                 $etat = false;
@@ -22,7 +22,7 @@
                     <td>$etudiant[prenom]</td>
                     <td>$etudiant[mel]</td>
                     <td>$etudiant[numexam]</td>
-                    <td>" . getSwitch($etat, $etudiant[num]) . "</td>
+                    <td>" . getSwitch($etat, $etudiant['num']) . "</td>
                     <td><i class='material-icons red900' onClick='if(confirm(\"ête-vous sûr?\"))supprUtilisateur($etudiant[num], this)'>delete</i></td>
                   </tr>";
           }

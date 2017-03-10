@@ -11,7 +11,7 @@
             
             $req = $bd->prepare('UPDATE port_etudiant SET VALIDE=:etat WHERE NUM=:id_user');
             
-            if($_POST['etat']){
+            if($_POST['etat'] == 'true'){
                 $etat = 'O';
             }else{
                 $etat = 'N';
