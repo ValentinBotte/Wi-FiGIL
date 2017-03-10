@@ -37,9 +37,10 @@ $(function() {
 
     $("#bt_ajout").click(function() {
         if($('#libelle').val().length > 0 && $('#mac').val().length > 0){
+            console.info("cc");
             $.post( "../php/ajax/utilisateur/ajoutPeripherique.php", { libelle: $('#libelle').val(), mac: $('#mac').val() })
             .done(function( data ) {
-                refreshPeripheriquesTable();
+                alert(data.text);
             if(data.status === "success"){
                     Materialize.toast(data.response, 4000);
                     refreshPeripheriquesTable();

@@ -4,10 +4,7 @@
     <list default="true" id="e72723b0-f3b3-4ca0-b346-80a3b985358b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/action.js" afterPath="$PROJECT_DIR$/js/action.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/ajax/administrateur/etatUtilisateur.php" afterPath="$PROJECT_DIR$/php/ajax/administrateur/etatUtilisateur.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/ajax/administrateur/refreshProfesseurs.php" afterPath="$PROJECT_DIR$/php/ajax/administrateur/refreshProfesseurs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/ajax/administrateur/refreshUtilisateurs.php" afterPath="$PROJECT_DIR$/php/ajax/administrateur/refreshUtilisateurs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ressources/Crebase_GestionWifi.sql" afterPath="$PROJECT_DIR$/ressources/Crebase_GestionWifi.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/ajax/utilisateur/ajoutPeripherique.php" afterPath="$PROJECT_DIR$/php/ajax/utilisateur/ajoutPeripherique.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +25,7 @@
       <file leaf-file-name="Crebase_GestionWifi.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ressources/Crebase_GestionWifi.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
+            <state relative-caret-position="306">
               <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="85" />
               <folding />
             </state>
@@ -94,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="refreshPeripheriques.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="refreshPeripheriques.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/ajax/utilisateur/refreshPeripheriques.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
@@ -109,30 +106,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajoutPeripherique.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ajoutPeripherique.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/ajax/utilisateur/ajoutPeripherique.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="135" lean-forward="false" selection-start-line="11" selection-start-column="135" selection-end-line="11" selection-end-column="135" />
+            <state relative-caret-position="272">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <marker date="1489137452851" expanded="true" signature="258:386" ph="INSERT INTO PERIPHERIQUE... " />
-                <marker date="1489137452851" expanded="true" signature="258:399" ph="INSERT INTO PERIPHERIQUE... " />
-                <marker date="1489137452851" expanded="true" signature="426:567" ph="INSERT INTO PERIPHERIQUE... " />
-                <marker date="1489137452851" expanded="true" signature="650:791" ph="INSERT INTO PERIPHERIQUE... " />
+                <marker date="1489139848971" expanded="true" signature="258:399" ph="INSERT INTO PERIPHERIQUE... " />
+                <marker date="1489139848971" expanded="true" signature="482:623" ph="INSERT INTO PERIPHERIQUE... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="supprPeripherique.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/ajax/utilisateur/supprPeripherique.php">
+      <file leaf-file-name="actionAdministrateur.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/actionAdministrateur.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1489131585113" expanded="true" signature="185:245" ph="DELETE FROM " />
-                <marker date="1489131585113" expanded="true" signature="283:343" ph="DELETE FROM " />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,8 +132,8 @@
       <file leaf-file-name="action.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/action.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+            <state relative-caret-position="618">
+              <caret line="42" column="33" lean-forward="false" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -171,12 +163,12 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/php/connexion.php" />
         <option value="$PROJECT_DIR$/php/ajax/utilisateur/refreshPeripheriques.php" />
-        <option value="$PROJECT_DIR$/php/ajax/utilisateur/ajoutPeripherique.php" />
-        <option value="$PROJECT_DIR$/js/action.js" />
         <option value="$PROJECT_DIR$/ressources/Crebase_GestionWifi.sql" />
         <option value="$PROJECT_DIR$/php/ajax/administrateur/etatUtilisateur.php" />
         <option value="$PROJECT_DIR$/php/ajax/administrateur/refreshUtilisateurs.php" />
         <option value="$PROJECT_DIR$/php/ajax/administrateur/refreshProfesseurs.php" />
+        <option value="$PROJECT_DIR$/js/action.js" />
+        <option value="$PROJECT_DIR$/php/ajax/utilisateur/ajoutPeripherique.php" />
       </list>
     </option>
   </component>
@@ -388,12 +380,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1489131674847</updated>
-      <workItem from="1489131676743" duration="6577000" />
+      <workItem from="1489131676743" duration="7888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6577000" />
+    <option name="totallyTimeSpent" value="7888000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
@@ -475,27 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/ajax/utilisateur/ajoutPeripherique.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="135" lean-forward="false" selection-start-line="11" selection-start-column="135" selection-end-line="11" selection-end-column="135" />
-          <folding>
-            <marker date="1489137452851" expanded="true" signature="258:386" ph="INSERT INTO PERIPHERIQUE... " />
-            <marker date="1489137452851" expanded="true" signature="258:399" ph="INSERT INTO PERIPHERIQUE... " />
-            <marker date="1489137452851" expanded="true" signature="426:567" ph="INSERT INTO PERIPHERIQUE... " />
-            <marker date="1489137452851" expanded="true" signature="650:791" ph="INSERT INTO PERIPHERIQUE... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/action.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -559,7 +530,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ressources/Crebase_GestionWifi.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
+        <state relative-caret-position="306">
           <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="85" />
           <folding />
         </state>
@@ -574,6 +545,33 @@
             <marker date="1489134099670" expanded="true" signature="237:301" ph="SELECT * FRO... PERIPHERIQUE" />
             <marker date="1489134099670" expanded="true" signature="715:963" ph="..." />
             <marker date="1489134099670" expanded="true" signature="715:1106" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/actionAdministrateur.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/action.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="42" column="33" lean-forward="false" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/ajax/utilisateur/ajoutPeripherique.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <marker date="1489139848971" expanded="true" signature="258:399" ph="INSERT INTO PERIPHERIQUE... " />
+            <marker date="1489139848971" expanded="true" signature="482:623" ph="INSERT INTO PERIPHERIQUE... " />
           </folding>
         </state>
       </provider>
