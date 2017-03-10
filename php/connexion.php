@@ -1,12 +1,11 @@
-<?php 
-        session_start();
+<?php
         require_once('bd.php');
         
         if(isset($_POST['mel']) && isset($_POST['mdp'])){
-            
+            $mdp = md5($_POST['mdp']);
             $req = $bd->prepare('SELECT * FROM port_etudiant WHERE mel=:mel AND mdp=:mdp');
             $req->bindParam(':mel', $_POST['mel']);
-            $req->bindParam(':mdp', hash('md5', $_POST['mdp']));
+            $req->bindParam(':mdp', $mdp);
             $req->execute();    
 
             $user = $req->fetch();
@@ -28,7 +27,7 @@
                 
                 $req = $bd->prepare('SELECT * FROM port_professeur WHERE mel=:mel AND mdp=:mdp');
                 $req->bindParam(':mel', $_POST['mel']);
-                $req->bindParam(':mdp', hash('md5', $_POST['mdp']));
+                $req->bindParam(':mdp', $mdp);
                 $req->execute();    
 
                 $user = $req->fetch();

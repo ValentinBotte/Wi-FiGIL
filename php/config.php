@@ -1,13 +1,13 @@
 <?php
 
     /* URL */
-        $url = "http://localhost:8888/Wi-FiGIL/";
+        $url = "http://localhost/Wi-FiGIL/";
 
     /* CONNEXION BDD */
         $host = "mysql:host=localhost";
         $nomBase = "acceswifi";
         $ndc = "root";
-        $mdp = "root";
+        $mdp = "";
 
     /* GRADE 
         0 = utilisateur

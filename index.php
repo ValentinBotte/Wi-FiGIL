@@ -1,6 +1,6 @@
-<?php 
+<?php
     session_start();
-    require_once('php/connexion.php'); 
+    require_once('php/connexion.php');
     
     if(isset($_SESSION['user'])){ 
         if(strcmp("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", $url) == 0){
@@ -82,15 +82,15 @@
             <form class="col s12" method="post" action="">
               <div class="row">
                 <div class="input-field col s4  offset-s4">
-                  <input id="mel" name="mel" type="text" value="<?php echo $_POST['mel']; ?>">
-                  <label for="mel" class="white-text">Adresse email</label>
+                    <input id="mel" name="mel" type="text" value="<?php if(isset($_POST['mel'])){echo $_POST['mel'];} ?>">
+                    <label for="mel" class="white-text">Adresse email</label>
                 </div>
               </div>
 
               <div class="row">
                 <div class="input-field col s4 offset-s4">
-                  <input id="mdp" name="mdp" type="password" value="<?php echo $_POST['mdp']; ?>">
-                  <label for="mdp" class="white-text">Mot de passe</label>
+                    <input id="mdp" name="mdp" type="password" value="<?php if(isset($_POST['mdp'])){echo $_POST['mdp'];} ?>">
+                    <label for="mdp" class="white-text">Mot de passe</label>
                 </div>
               </div>
             

@@ -46,7 +46,10 @@ CREATE TABLE IF NOT EXISTS `port_etudiant` (
 -- Contenu de la table `port_etudiant`
 --
 
-INSERT INTO `port_etudiant` (`num`, `numGroupe`, `nom`, `prenom`, `mel`, `mdp`, `numexam`, `valide`) VALUES(1, 1, 'Raimon', 'Dylan', 'dylanraimon@gmail.com', 'admin!', '1231231231231231', 'O');
+INSERT INTO `port_etudiant` (`num`, `numGroupe`, `nom`, `prenom`, `mel`, `mdp`, `numexam`, `valide`) VALUES
+(152, 11, 'BOTTE', 'Valentin', 'botte.valentin83@gmail.com', 'fcdc73f20acb6df693f000ce101b4f04', NULL, 'O'),
+(160, 11, 'NICOLI', 'Romain', 'romain.nicoli83@gmail.com', '4ab422ebe898aaa0c0c7b3df6b39cea8', NULL, 'O'),
+(162, 11, 'RAIMON', 'Dylan', 'dylanraimon@gmail.com', '3e0fcf194a1f41068953f5f17ee45fde', NULL, 'O');
 
 
 -- --------------------------------------------------------
@@ -66,11 +69,14 @@ CREATE TABLE IF NOT EXISTS `port_professeur` (
   PRIMARY KEY (`num`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
+
 --
 -- Contenu de la table `port_professeur`
 --
 
-INSERT INTO `port_professeur` (`num`, `nom`, `prenom`, `mel`, `mdp`, `niveau`, `valide`) VALUES(1, 'Admin', 'Admin', 'dylanraimon@gmail.com', 'admin!', 1, 'O');
+INSERT INTO `port_professeur` (`num`, `nom`, `prenom`, `mel`, `mdp`, `niveau`, `valide`) VALUES
+(1, 'admin', '', 'jgil@ac-nice.fr', 'fcdc73f20acb6df693f000ce101b4f04', 0, 'O'),
+(6, 'GIL', 'José', 'Jose-Ambrosio.Gil@ac-nice.fr', 'fcdc73f20acb6df693f000ce101b4f04', 1, 'O');
 
 -- --------------------------------------------------------
 
@@ -86,14 +92,14 @@ CREATE TABLE IF NOT EXISTS `peripherique` (
   `date_ajout` DATETIME NOT NULL,
   PRIMARY KEY (`num`),
   CONSTRAINT FK_PERIPHE_ETU FOREIGN KEY (`num_user`)
-	  REFERENCES `port_etudiant` (`num`) 
+	  REFERENCES `port_etudiant` (`num`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `peripherique`
 --
 
-INSERT INTO `peripherique` (`num`, `num_user`, `libelle`, `mac`, `date_ajout`) VALUES(1, 1, 'portable', 'F8CF12B46A6F', '2016-05-08 00:00:00');
+INSERT INTO `peripherique` (`num`, `num_user`, `libelle`, `mac`, `date_ajout`) VALUES(1, 162, 'portable', 'F8CF12B46A6F', '2016-05-08 00:00:00');
 
 -- --------------------------------------------------------
 COMMIT;
