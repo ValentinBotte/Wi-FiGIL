@@ -87,20 +87,23 @@ INSERT INTO `port_professeur` (`num`, `nom`, `prenom`, `mel`, `mdp`, `niveau`, `
 CREATE TABLE IF NOT EXISTS `peripherique` (
   `num` int(11) NOT NULL AUTO_INCREMENT,
   `num_user` int(11) NOT NULL,
+  `num_prof` int(11) NOT NULL,
   `libelle` varchar(128) NOT NULL,
   `mac` varchar(12) NOT NULL,
   `date_ajout` DATETIME NOT NULL,
   `etat` INTEGER DEFAULT 0 NOT NULL,
   PRIMARY KEY (`num`),
   CONSTRAINT FK_PERIPHE_ETU FOREIGN KEY (`num_user`)
-	  REFERENCES `port_etudiant` (`num`)
+	  REFERENCES `port_etudiant` (`num`),
+	CONSTRAINT FK_PERIPHE_PROF FOREIGN KEY (`num_prof`)
+	  REFERENCES `port_professeur` (`num`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `peripherique`
 --
 
-INSERT INTO `peripherique` (`num`, `num_user`, `libelle`, `mac`, `date_ajout`) VALUES(1, 162, 'portable', 'F8CF12B46A6F', '2016-05-08 00:00:00');
+INSERT INTO `peripherique` (`num`, `num_user`,`num_prof`, `libelle`, `mac`, `date_ajout`, `etat`) VALUES(1, 162, 6, 'portable', 'F8CF12B46A6F', '2016-05-08 00:00:00', '0');
 
 -- --------------------------------------------------------
 COMMIT;

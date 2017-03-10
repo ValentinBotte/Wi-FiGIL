@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e72723b0-f3b3-4ca0-b346-80a3b985358b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/ajax/utilisateur/refreshPeripheriques.php" afterPath="$PROJECT_DIR$/php/ajax/utilisateur/refreshPeripheriques.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/ajax/utilisateur/ajoutPeripherique.php" afterPath="$PROJECT_DIR$/php/ajax/utilisateur/ajoutPeripherique.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ressources/Crebase_GestionWifi.sql" afterPath="$PROJECT_DIR$/ressources/Crebase_GestionWifi.sql" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,30 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1207">
-              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-              <folding>
-                <marker date="1489133354726" expanded="true" signature="6315:6657" ph="..." />
-                <marker date="1489133354726" expanded="true" signature="6383:6630" ph="..." />
-                <marker date="1489133354726" expanded="true" signature="6449:6599" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="panel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utilisateur/panel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="bd.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/bd.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -56,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Crebase_GestionWifi.sql" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Crebase_GestionWifi.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ressources/Crebase_GestionWifi.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1040">
-              <caret line="73" column="40" lean-forward="true" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+            <state relative-caret-position="309">
+              <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="refreshPeripheriques.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="refreshPeripheriques.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/ajax/utilisateur/refreshPeripheriques.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
@@ -107,6 +83,29 @@
                 <marker date="1489134099670" expanded="true" signature="715:963" ph="..." />
                 <marker date="1489134099670" expanded="true" signature="715:1106" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajoutPeripherique.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/ajax/utilisateur/ajoutPeripherique.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <folding>
+                <marker date="1489134387199" expanded="true" signature="233:370" ph="INSERT INTO PERIPHERIQUE... " />
+                <marker date="1489134387199" expanded="true" signature="453:590" ph="INSERT INTO PERIPHERIQUE... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="action.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/action.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="584">
+              <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,8 +156,10 @@
         <option value="$PROJECT_DIR$/php/config.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/php/connexion.php" />
-        <option value="$PROJECT_DIR$/ressources/Crebase_GestionWifi.sql" />
         <option value="$PROJECT_DIR$/php/ajax/utilisateur/refreshPeripheriques.php" />
+        <option value="$PROJECT_DIR$/js/action.js" />
+        <option value="$PROJECT_DIR$/php/ajax/utilisateur/ajoutPeripherique.php" />
+        <option value="$PROJECT_DIR$/ressources/Crebase_GestionWifi.sql" />
       </list>
     </option>
   </component>
@@ -284,6 +285,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wi-FiGIL" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Wi-FiGIL" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -303,12 +318,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1489131674847</updated>
-      <workItem from="1489131676743" duration="2428000" />
+      <workItem from="1489131676743" duration="2936000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2428000" />
+    <option name="totallyTimeSpent" value="2936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
@@ -427,14 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ressources/Crebase_GestionWifi.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="73" column="40" lean-forward="true" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/ajax/utilisateur/refreshPeripheriques.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -445,6 +452,33 @@
             <marker date="1489134099670" expanded="true" signature="715:963" ph="..." />
             <marker date="1489134099670" expanded="true" signature="715:1106" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/action.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/ajax/utilisateur/ajoutPeripherique.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding>
+            <marker date="1489134387199" expanded="true" signature="233:370" ph="INSERT INTO PERIPHERIQUE... " />
+            <marker date="1489134387199" expanded="true" signature="453:590" ph="INSERT INTO PERIPHERIQUE... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ressources/Crebase_GestionWifi.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
