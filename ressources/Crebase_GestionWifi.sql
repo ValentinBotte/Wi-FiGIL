@@ -86,8 +86,8 @@ INSERT INTO `port_professeur` (`num`, `nom`, `prenom`, `mel`, `mdp`, `niveau`, `
 
 CREATE TABLE IF NOT EXISTS `peripherique` (
   `num` int(11) NOT NULL AUTO_INCREMENT,
-  `num_user` int(11) NOT NULL,
-  `num_prof` int(11) NOT NULL,
+  `num_user` int(11) NULL,
+  `num_prof` int(11) NULL,
   `libelle` varchar(128) NOT NULL,
   `mac` varchar(12) NOT NULL,
   `date_ajout` DATETIME NOT NULL,
