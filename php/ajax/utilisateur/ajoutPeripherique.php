@@ -14,11 +14,11 @@
                 $sql = 'INSERT INTO PERIPHERIQUE (num, num_user, num_prof, libelle, mac, date_ajout, etat) VALUES (null, null, :id_prof, :libelle, :mac, :dateNow, 0)';
                 $param = ':id_prof';
             }
-
+            $convert = convertMac($_POST['mac']);
             $req = $bd->prepare($sql);
             $req->bindParam($param, $_SESSION['user']['num']);
             $req->bindParam(':libelle', $_POST['libelle']);
-            $req->bindParam(':mac', convertMac($_POST['mac']));
+            $req->bindParam(':mac', $convert);
             $req->bindParam(':dateNow', $dateNow);
 
             $req->execute();
