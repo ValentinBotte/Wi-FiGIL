@@ -26,7 +26,6 @@
         }
           
         echo "<tr>
-                <td>$peripherique[num]</td>
                 <td>$peripherique[libelle]</td>
                 <td>$peripherique[mac]</td>
                 <td>$peripherique[date_ajout]</td>

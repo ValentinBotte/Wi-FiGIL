@@ -10,8 +10,7 @@ $mime = "application/x-gzip";
 header( "Content-Type: " . $mime );
 header( 'Content-Disposition: attachment; filename="' . $filename . '"' );
 
-$cmd = 'C:\xampp\mysql\bin\mysqldump -u $DBUSER --password=$DBPASSWD $DATABASE | gzip --best';
-
+$cmd = 'c:\xampp\mysql\bin\mysqldump -u '.$DBUSER.' -p '.$DBPASSWD.' '.$DATABASE.' | gzip --best';
 exec( $cmd );
 
 ?>

@@ -32,7 +32,7 @@
               <a href="#" class="brand-logo"><img src="../images/ico.png" height="64px"></a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li  class="active"><a href="">Utilisateurs</a></li>
-                <li><a href="">Périphériques</a></li>
+                <li><a href="peripherique.php">Périphériques</a></li>
                 <li><a href="../php/ajax/administrateur/sauvegardeSql.php">Sauvegarde</a></li>
                 <li><a href="../php/deconnexion.php"><i class="material-icons">power_settings_new</i></a></li>
               </ul>
@@ -46,7 +46,6 @@
             <table class="striped centered">
             <thead>
               <tr>
-                  <th data-field="id">ID</th>
                   <th data-field="num_groupe">NUM GROUPE</th>
                   <th data-field="nom">NOM</th>
                   <th data-field="prenom">PRENOM</th>
@@ -68,12 +67,11 @@
             <table class="striped centered">
             <thead>
               <tr>
-                  <th data-field="id">ID</th>
                   <th data-field="nom">NOM</th>
                   <th data-field="prenom">PRENOM</th>
                   <th data-field="mel">MEL</th>
-                  <th data-field="etat">NIVEAU</th>
-                  <th data-field="etat">VALIDE</th>
+                  <th data-field="niveau">NIVEAU</th>
+                  <th data-field="etat">ETAT</th>
                   <th data-field="action">ACTION</th>
               </tr>
             </thead>
@@ -82,10 +80,9 @@
               
             </tbody>
           </table>
+
     </div>
-           
-    </div>
-        
+
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>

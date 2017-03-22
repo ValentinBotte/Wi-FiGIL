@@ -23,16 +23,36 @@
             }
 
             echo "<tr>
-                    <td>$professeur[num]</td>
                     <td>$professeur[nom]</td>
                     <td>$professeur[prenom]</td>
                     <td>$professeur[mel]</td>
                     <td>$niveau</td>
-                    <td>$etat</td>
-                    <td></td>
+                    <td>" . getSwitch($etat, $professeur['num']) . "</td>
+                    <td><i class='material-icons red900' onClick='if(confirm(\"êtes-vous sûr?\"))supprProfesseur($professeur[num], this)'>delete</i></td>
                   </tr>";
           }
 
+    function getSwitch($bool, $id){
+        if($bool){
+            return "<div class=\"switch\">
+                                <label>
+                                  N
+                                  <input type=\"checkbox\" onChange=\"changeEtatProfesseur(this, $id)\" checked>
+                                  <span class=\"lever\"></span>
+                                  O
+                                </label>
+                              </div>";
+        }else{
+            return "<div class=\"switch\">
+                                <label>
+                                  N
+                                  <input type=\"checkbox\" onChange=\"changeEtatProfesseur(this, $id)\">
+                                  <span class=\"lever\"></span>
+                                  O
+                                </label>
+                              </div>";
+        }
+    }
     //}
 
 ?>

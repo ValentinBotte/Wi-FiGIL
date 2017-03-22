@@ -41,7 +41,6 @@
             <table class="striped centered">
             <thead>
               <tr>
-                  <th data-field="id">ID</th>
                   <th data-field="libelle">LIBELLE</th>
                   <th data-field="mac">MAC</th>
                   <th data-field="date_ajout">AJOUTE LE</th>
