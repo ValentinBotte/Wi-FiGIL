@@ -18,7 +18,7 @@ foreach($req->fetchAll() as $peripherique) {
                     <td>$peripherique[date_ajout]</td>
                     <td><i class='material-icons red900' onClick='if(confirm(\"êtes - vous sûr ? \"))supprPeripherique($peripherique[num], this)'>delete</i></td>
                     <td><i class='material-icons' onClick='if(confirm(\"êtes - vous sûr ? \"))validePeripherique($peripherique[num], this)'>done</i></td>
-                    <td><a class='waves-effect waves-light btn modal-trigger' onClick='openModal($peripherique[num], $peripherique[mac], \"$peripherique[nom]\", \"$peripherique[prenom]\", $peripherique[numGroupe])'>Modal</a></td>
+                    <td><a class='waves-effect waves-light btn modal-trigger' onClick='openModal($peripherique[num], \"$peripherique[mac]\", \"$peripherique[nom]\", \"$peripherique[prenom]\", $peripherique[numGroupe])'>COMMANDES</a></td>
                   </tr>";
 
 }

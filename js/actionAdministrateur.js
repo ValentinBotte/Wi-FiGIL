@@ -114,9 +114,9 @@ $(function() {
         $.post( "../php/ajax/administrateur/openModal.php", { ip: ip, mac: mac, nom: nom, prenom: prenom, groupe: groupe})
             .done(function( data ) {
                 if(data.status === "success"){
-                    Materialize.toast(data.response, 4000);
+                    Materialize.toast(data.response, 10000);
                 }else{
-                    Materialize.toast(data.response, 4000);
+                    Materialize.toast(data.response, 10000);
                 }
             });
     }
