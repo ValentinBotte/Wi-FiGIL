@@ -110,8 +110,15 @@ $(function() {
             });
     }
 
-    function openModal(){
-        $('#modal1').modal('open');
+    function openModal(ip, mac, nom, prenom, groupe){
+        $.post( "../php/ajax/administrateur/openModal.php", { ip: ip, mac: mac, nom: nom, prenom: prenom, groupe: groupe})
+            .done(function( data ) {
+                if(data.status === "success"){
+                    Materialize.toast(data.response, 4000);
+                }else{
+                    Materialize.toast(data.response, 4000);
+                }
+            });
     }
 
     // validation d'un peripherique

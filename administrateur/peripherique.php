@@ -57,7 +57,6 @@
                 </thead>
 
                 <tbody id="peri">
-
                 </tbody>
                 </table>
 
@@ -80,44 +79,6 @@
                 </table>
 
         </div>
-
-            <!-- Modal Structure -->
-            <div id="modal1" class="modal">
-                <div class="modal-content">
-                    <h4>Commandes :</h4>
-                    <p>Add-DhcpServerv4Reservation -ScopeId 10.10.0.0 -IPAddress 10.10.130.<?php $ip ?>  -ClientId <?php $mac ?> </p>
-
-                    <p>-Description "<?php $prenom ?> <?php $nom ?>-<?php $numGroupe ?>" -Name "<?php $prenom ?> <?php $nom ?>-<?php $numGroupe ?>" </p>
-                    
-                    <p>Remove-DhcpServerv4Reservation -ComputerName "cd1.sio.lan" -ScopeId 10.10.0.0 -ClientId <?php $mac ?></p>
-
-                    <p>nvram set wlan0_ssid0_acl_list=<?php $mac ?>,unknown,1\;</p>
-
-                    <p>nvram set wlan0_ssid0_acl_list=,unknown,1\;</p>
-
-                    <p>ssh 10.10.0.<?php $ip ?> –l admin</p>
-
-                    <p>nvram set wlan0_ssid0_acl_list=<?php $mac ?>,unknown,1\;</p>
-
-                    <p>nvram commit</p>
-
-                    <p>reboot</p>
-
-                    <p>ssh 10.10.0.<?php $ip ?> –l admin</p>
-
-                    <p>listMac=`nvram show | grep wlan0_ssid0_acl_list | cut -d"=" -f2`</p>
-
-                    <p>nvram set wlan0_ssid0_acl_list=${listMac}<?php $mac ?>,unknown,1\;</p>
-
-                    <p>nvram commit</p>
-
-                    <p>reboot</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OK</a>
-                </div>
-            </div>
-            <a class='waves-effect waves-light btn modal-trigger' href="#modal1">Modal</a> <!-- LA CA MARCHE -->
 
             <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
             <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js'></script>

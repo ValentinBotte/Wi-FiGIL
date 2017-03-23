@@ -5,7 +5,7 @@ session_start();
 
 require_once('../../bd.php');
 
-$req = $bd->query('SELECT peripherique.num, libelle, mac, date_ajout, nom, prenom FROM PERIPHERIQUE INNER JOIN port_etudiant ON PERIPHERIQUE.num_user = port_etudiant.num WHERE ETAT = 0 ORDER BY NOM');
+$req = $bd->query('SELECT peripherique.num, numGroupe, libelle, mac, date_ajout, nom, prenom FROM PERIPHERIQUE INNER JOIN port_etudiant ON PERIPHERIQUE.num_user = port_etudiant.num WHERE ETAT = 0 ORDER BY NOM');
 
 foreach($req->fetchAll() as $peripherique) {
 
@@ -18,7 +18,7 @@ foreach($req->fetchAll() as $peripherique) {
                     <td>$peripherique[date_ajout]</td>
                     <td><i class='material-icons red900' onClick='if(confirm(\"êtes - vous sûr ? \"))supprPeripherique($peripherique[num], this)'>delete</i></td>
                     <td><i class='material-icons' onClick='if(confirm(\"êtes - vous sûr ? \"))validePeripherique($peripherique[num], this)'>done</i></td>
-                    <td><a class='waves-effect waves-light btn modal-trigger' href=\"#modal1\">Modal</a></td>
+                    <td><a class='waves-effect waves-light btn modal-trigger' onClick='openModal($peripherique[num], $peripherique[mac], \"$peripherique[nom]\", \"$peripherique[prenom]\", $peripherique[numGroupe])'>Modal</a></td>
                   </tr>";
 
 }
