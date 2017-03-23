@@ -7,6 +7,7 @@ $(function() {
     refreshPeripheriqueValideTable();
 });
 
+
 // Charge la liste des utilisateurs
 
     function refreshPeripheriqueTable(){
@@ -109,6 +110,10 @@ $(function() {
             });
     }
 
+    function openModal(){
+        $('#modal1').modal('open');
+    }
+
     // validation d'un peripherique
 
     function validePeripherique(id, elem){
@@ -122,3 +127,4 @@ $(function() {
                 }
             });
     }
+

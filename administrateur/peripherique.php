@@ -50,8 +50,9 @@
                       <th data-field="libelle">LIBELLE</th>
                       <th data-field="mac">MAC</th>
                       <th data-field="date_ajout">DATE AJOUT</th>
-                      <th data-field="delete">DELETE</th>
+                      <th data-field="delete">SUPPRIMER</th>
                       <th data-field="valider">VALIDER</th>
+                      <th data-field="commandes">COMMANDES</th>
                   </tr>
                 </thead>
 
@@ -80,10 +81,48 @@
 
         </div>
 
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <h4>Commandes :</h4>
+                    <p>Add-DhcpServerv4Reservation -ScopeId 10.10.0.0 -IPAddress 10.10.130.<?php $ip ?>  -ClientId <?php $mac ?> </p>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-        <script src="../js/actionAdministrateur.js"></script>
+                    <p>-Description "<?php $prenom ?> <?php $nom ?>-<?php $numGroupe ?>" -Name "<?php $prenom ?> <?php $nom ?>-<?php $numGroupe ?>" </p>
+                    
+                    <p>Remove-DhcpServerv4Reservation -ComputerName "cd1.sio.lan" -ScopeId 10.10.0.0 -ClientId <?php $mac ?></p>
+
+                    <p>nvram set wlan0_ssid0_acl_list=<?php $mac ?>,unknown,1\;</p>
+
+                    <p>nvram set wlan0_ssid0_acl_list=,unknown,1\;</p>
+
+                    <p>ssh 10.10.0.<?php $ip ?> –l admin</p>
+
+                    <p>nvram set wlan0_ssid0_acl_list=<?php $mac ?>,unknown,1\;</p>
+
+                    <p>nvram commit</p>
+
+                    <p>reboot</p>
+
+                    <p>ssh 10.10.0.<?php $ip ?> –l admin</p>
+
+                    <p>listMac=`nvram show | grep wlan0_ssid0_acl_list | cut -d"=" -f2`</p>
+
+                    <p>nvram set wlan0_ssid0_acl_list=${listMac}<?php $mac ?>,unknown,1\;</p>
+
+                    <p>nvram commit</p>
+
+                    <p>reboot</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+                </div>
+            </div>
+            <a class='waves-effect waves-light btn modal-trigger' href="#modal1">Modal</a> <!-- LA CA MARCHE -->
+
+            <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js'></script>
+            <script src="../js/index.js"></script>
+            <script src="../js/actionAdministrateur.js"></script>
 
         </body>
     </html>
