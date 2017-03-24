@@ -55,3 +55,5 @@ $(function() {
         }
         
     });
+// Gestion affichage mobile du menu 
+$(".button-collapse").sideNav();

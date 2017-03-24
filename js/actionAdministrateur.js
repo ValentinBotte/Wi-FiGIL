@@ -145,4 +145,5 @@ function openModal2(ip, mac, nom, prenom){
                 }
             });
     }
-
+// Gestion affichage mobile du menu 
+$(".button-collapse").sideNav();
