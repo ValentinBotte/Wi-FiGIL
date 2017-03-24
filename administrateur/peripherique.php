@@ -22,7 +22,7 @@
 
       <link rel="stylesheet" href="../css/materialize.css">
       <link rel="stylesheet" href="../css/panel.css">
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
 
     <body>
@@ -80,8 +80,8 @@
 
         </div>
 
-            <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js'></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
             <script src="../js/index.js"></script>
             <script src="../js/actionAdministrateur.js"></script>
 

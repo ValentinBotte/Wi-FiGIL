@@ -22,7 +22,7 @@
 
   <link rel="stylesheet" href="../css/materialize.css">
   <link rel="stylesheet" href="../css/panel.css">
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>

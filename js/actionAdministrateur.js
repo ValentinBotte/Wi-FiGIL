@@ -121,6 +121,17 @@ $(function() {
             });
     }
 
+function openModal2(ip, mac, nom, prenom){
+    $.post( "../php/ajax/administrateur/openModal.php", { ip: ip, mac: mac, nom: nom, prenom: prenom})
+        .done(function( data ) {
+            if(data.status === "success"){
+                Materialize.toast(data.response, 10000);
+            }else{
+                Materialize.toast(data.response, 10000);
+            }
+        });
+}
+
     // validation d'un peripherique
 
     function validePeripherique(id, elem){

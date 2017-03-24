@@ -95,16 +95,22 @@ CREATE TABLE IF NOT EXISTS `peripherique` (
   `etat` INTEGER DEFAULT 0 NOT NULL,
   PRIMARY KEY (`num`),
   CONSTRAINT FK_PERIPHE_ETU FOREIGN KEY (`num_user`)
-	  REFERENCES `port_etudiant` (`num`),
+	  REFERENCES `port_etudiant` (`num`) on delete CASCADE ,
 	CONSTRAINT FK_PERIPHE_PROF FOREIGN KEY (`num_prof`)
-	  REFERENCES `port_professeur` (`num`)
+	  REFERENCES `port_professeur` (`num`) on delete CASCADE
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `peripherique`
 --
 
-INSERT INTO `peripherique` (`num`, `num_user`,`num_prof`, `libelle`, `mac`, `date_ajout`, `etat`) VALUES(1, 162, 6, 'portable', 'F8CF12B46A6F', '2016-05-08 00:00:00', '0');
+INSERT INTO `peripherique` (`num`, `num_user`,`num_prof`, `libelle`, `mac`, `date_ajout`, `etat`) VALUES
+(1, 162, null, 'iphone 5', 'F8CF12B46A6F', '2016-05-08 00:00:00', '1'),
+(2, 162, null, 'Samsung S', 'D6BC6A2CA65D', '2016-10-15 00:00:00', '1'),
+(3, 162, null, 'Nokia', '14B5AD4BC6A', '2017-01-24 00:00:00', '0'),
+(4, 162, null, 'Archos', '19B75EF13DA2', '2017-03-02 00:00:00', '0'),
+(5, 162, null, 'LUMIA', '12DAB15C58F3', '2017-03-13 00:00:00', '0')
+;
 
 -- --------------------------------------------------------
 COMMIT;
