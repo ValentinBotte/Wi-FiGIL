@@ -11,7 +11,13 @@
         $req->bindParam(':id_peripherique' , $_POST['id']);
 
         $req->execute();
-        
+        $secureKey = "WPA2-PSK(AES)";
+        $ssid = "SIOSIOSIO";
+        $mdp = "2016-BONA-SIO";
+        $messageAdmin="Bonjour,\n\n Vous avez activé l'accès aux bornes Wi-Fi de ".$_SESSION['user']['nom']." ".$_SESSION['user']['prenom']." le ".date("Y-m-d");
+        mail("valentin.botte@outlook.fr","Validation peripherique",$messageAdmin);
+        $messageUtilisateur="Bonjour ".$_SESSION['user']['prenom'].",\n\nVotre demande d'accès aux bornes Wi-Fi a été validé.\nVous pouvez vous connecter en utilisant les informations ci dessous :\n\n- $secureKey\n- SSID (non diffusé) : $ssid\n- Passphrase : $mdp\n\nCordialement";
+        mail("valentin.botte@outlook.fr","Validation peripherique",$messageUtilisateur);
         $response_array['response'] = "Peripherique validé.";   // Si ok
         $response_array['status'] = 'success';
         

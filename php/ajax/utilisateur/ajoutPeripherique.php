@@ -23,6 +23,10 @@
 
             $req->execute();
 
+            $messageAdmin = "Bonjour,\n\n Vous avez reçu une nouvelle demande d'accès aux bornes Wi-Fi envoyé par : ".$_SESSION['user']['nom']." ".$_SESSION['user']['prenom'] ." le ".date("Y-m-d");
+            mail("valentin.botte@outlook.fr","Ajout peripherique",$messageAdmin);
+            $messageUtilisateur = "Bonjour ".$_SESSION['user']['prenom']." ,\n\nNous vous confirmons que vous avez effectué une demande d'accès aux bornes Wi-Fi du BTS SIO.\nRappel de vos informations :\n\nNom : ".$_SESSION['user']['nom']." \nPrénom : ".$_SESSION['user']['prenom']." \nEmail : ".$_SESSION['user']['mel']." \nGroupe d'utilisateur : ".$_SESSION['user']['numGroupe']." \nAdresse MAC : ".$_POST['mac']." \n\nDès lors que votre demande sera traité, vous recevrez un email de confirmation avec les informations de connexion.\nCordialement.";
+            mail($_SESSION['user']['mel'],"Ajout peripherique",$messageUtilisateur);
             $response_array['response'] = 'Périphérique ajouté.';   // Si ok
             $response_array['status'] = 'success';
 
