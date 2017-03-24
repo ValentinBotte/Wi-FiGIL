@@ -1,5 +1,5 @@
     <?php
-        session_start();
+		session_start();
         require_once('../php/connexion.php');
 
         if(!isset($_SESSION['user'])){   //Si utilisateur pas connecte
@@ -34,13 +34,13 @@
                   <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="panel.php">Utilisateurs</a></li>
                     <li class="active"><a href="">Périphériques</a></li>
-                    <li><a href="../php/ajax/administrateur/sauvegardeSql.php">Sauvegarde</a></li>
+                    <li><a href="../php/dump.php">Sauvegarde</a></li>
                     <li><a href="../php/deconnexion.php"><i class="material-icons">power_settings_new</i></a></li>
                   </ul>
                   <ul class="side-nav" id="mobile-demo">
                     <li><a href="panel.php">Utilisateurs</a></li>
                     <li class="active"><a href="">Périphériques</a></li>
-                    <li><a href="../php/ajax/administrateur/sauvegardeSql.php">Sauvegarde</a></li>
+                    <li><a href="../php/dump.php">Sauvegarde</a></li>
                     <li><a href="../php/deconnexion.php">Se déconnecter</a></li>
                   </ul>
                 </div>
@@ -48,7 +48,7 @@
 
             <div class="container">
 
-            <h5 style="margin-top:50px;">Peripherique en attente</h5>
+            <h5 style="margin-top:50px;">Peripheriques en attente</h5>
                 <table class="striped centered">
                 <thead>
                   <tr>
@@ -67,7 +67,7 @@
                 </tbody>
                 </table>
 
-                <h5 style="margin-top:50px;">Peripherique validé</h5>
+                <h5 style="margin-top:50px;">Peripheriques validé</h5>
                 <table class="striped centered">
                     <thead>
                     <tr>

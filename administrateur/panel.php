@@ -40,7 +40,7 @@
               <ul class="side-nav" id="mobile-demo">
                 <li  class="active"><a href="">Utilisateurs</a></li>
                 <li><a href="peripherique.php">Périphériques</a></li>
-                <li><a href="../php/ajax/administrateur/sauvegardeSql.php">Sauvegarde</a></li>
+                <li><a href="../php/dump.php">Sauvegarde</a></li>
                 <li><a href="../php/deconnexion.php">Se déconnecter</a></li>
              </ul>
             </div>

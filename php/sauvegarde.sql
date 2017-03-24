@@ -1,4 +1,4 @@
--- Generation time: Thu, 23 Mar 2017 22:24:30 +0100
+-- Generation time: Fri, 24 Mar 2017 07:57:58 +0100
 -- Host: 127.0.0.1
 -- DB name: acceswifi
 /*!40030 SET NAMES UTF8 */;
@@ -24,11 +24,10 @@ CREATE TABLE `peripherique` (
   PRIMARY KEY (`num`),
   KEY `FK_PERIPHE_ETU` (`num_user`),
   KEY `FK_PERIPHE_PROF` (`num_prof`),
-  CONSTRAINT `FK_PERIPHE_ETU` FOREIGN KEY (`num_user`) REFERENCES `port_etudiant` (`num`),
-  CONSTRAINT `FK_PERIPHE_PROF` FOREIGN KEY (`num_prof`) REFERENCES `port_professeur` (`num`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+  CONSTRAINT `FK_PERIPHE_ETU` FOREIGN KEY (`num_user`) REFERENCES `port_etudiant` (`num`) ON DELETE CASCADE,
+  CONSTRAINT `FK_PERIPHE_PROF` FOREIGN KEY (`num_prof`) REFERENCES `port_professeur` (`num`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
-INSERT INTO `peripherique` VALUES ('1','162','6','portable','F8CF12B46A6F','2016-05-08 00:00:00','0'); 
 
 
 DROP TABLE IF EXISTS `port_etudiant`;
@@ -46,8 +45,7 @@ CREATE TABLE `port_etudiant` (
 ) ENGINE=InnoDB AUTO_INCREMENT=163 DEFAULT CHARSET=utf8;
 
 INSERT INTO `port_etudiant` VALUES ('152','11','BOTTE','Valentin','botte.valentin83@gmail.com','fcdc73f20acb6df693f000ce101b4f04',NULL,'O'),
-('160','11','NICOLI','Romain','romain.nicoli83@gmail.com','4ab422ebe898aaa0c0c7b3df6b39cea8',NULL,'O'),
-('162','11','RAIMON','Dylan','dylanraimon@gmail.com','3e0fcf194a1f41068953f5f17ee45fde',NULL,'O'); 
+('160','11','NICOLI','Romain','romain.nicoli83@gmail.com','4ab422ebe898aaa0c0c7b3df6b39cea8',NULL,'O'); 
 
 
 DROP TABLE IF EXISTS `port_professeur`;
