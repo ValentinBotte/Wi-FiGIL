@@ -7,7 +7,7 @@
 
     try{
         
-        $req = $bd->prepare("UPDATE PERIPHERIQUE SET ETAT = 1 WHERE NUM=:id_peripherique");
+        $req = $bd->prepare("UPDATE peripherique SET ETAT = 1 WHERE NUM=:id_peripherique");
         $req->bindParam(':id_peripherique' , $_POST['id']);
 
         $req->execute();

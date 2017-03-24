@@ -8,9 +8,9 @@
     try{
         
         if($_SESSION['grade'] == 0){
-            $sql = 'DELETE FROM PERIPHERIQUE WHERE NUM=:id AND NUM_USER=:id_user';
+            $sql = 'DELETE FROM peripherique WHERE NUM=:id AND NUM_USER=:id_user';
         }else{
-            $sql = 'DELETE FROM PERIPHERIQUE WHERE NUM=:id AND NUM_PROF=:id_user';
+            $sql = 'DELETE FROM peripherique WHERE NUM=:id AND NUM_PROF=:id_user';
         }
         
         $req = $bd->prepare($sql);

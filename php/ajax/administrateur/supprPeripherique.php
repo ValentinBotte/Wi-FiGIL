@@ -7,7 +7,7 @@
 
     try{
         
-        $req = $bd->prepare("DELETE FROM PERIPHERIQUE WHERE NUM=:id_peripherique");
+        $req = $bd->prepare("DELETE FROM peripherique WHERE NUM=:id_peripherique");
         $req->bindParam(':id_peripherique' , $_POST['id']);
 
         $req->execute();

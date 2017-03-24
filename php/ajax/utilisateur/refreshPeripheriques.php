@@ -7,9 +7,9 @@
     // Connexion
         
     if($_SESSION['grade'] == 0){
-        $sql = 'SELECT * FROM PERIPHERIQUE WHERE NUM_USER=:id ORDER BY ETAT DESC';
+        $sql = 'SELECT * FROM peripherique WHERE NUM_USER=:id ORDER BY ETAT DESC';
     }else{
-        $sql = 'SELECT * FROM PERIPHERIQUE WHERE NUM_PROF=:id ORDER BY ETAT DESC';
+        $sql = 'SELECT * FROM peripherique WHERE NUM_PROF=:id ORDER BY ETAT DESC';
     }
 
     $req = $bd->prepare($sql);

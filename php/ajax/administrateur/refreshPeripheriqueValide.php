@@ -5,7 +5,7 @@ session_start();
 
 require_once('../../bd.php');
 
-$req = $bd->query('SELECT peripherique.num, libelle, mac, date_ajout, nom, prenom FROM PERIPHERIQUE INNER JOIN port_etudiant ON PERIPHERIQUE.num_user = port_etudiant.num WHERE ETAT = 1 ORDER BY NOM');
+$req = $bd->query('SELECT peripherique.num, libelle, mac, date_ajout, nom, prenom FROM peripherique INNER JOIN port_etudiant ON peripherique.num_user = port_etudiant.num WHERE ETAT = 1 ORDER BY NOM');
 
 foreach($req->fetchAll() as $peripherique) {
 
@@ -21,7 +21,7 @@ foreach($req->fetchAll() as $peripherique) {
 
 }
 
-$req = $bd->query('SELECT peripherique.num, libelle, mac, date_ajout, nom, prenom FROM PERIPHERIQUE INNER JOIN port_professeur ON PERIPHERIQUE.num_prof = port_professeur.num WHERE ETAT = 1 ORDER BY NOM');
+$req = $bd->query('SELECT peripherique.num, libelle, mac, date_ajout, nom, prenom FROM peripherique INNER JOIN port_professeur ON peripherique.num_prof = port_professeur.num WHERE ETAT = 1 ORDER BY NOM');
 
 foreach($req->fetchAll() as $peripherique) {
 

@@ -76,7 +76,7 @@
                         <th data-field="libelle">LIBELLE</th>
                         <th data-field="mac">MAC</th>
                         <th data-field="date_ajout">DATE AJOUT</th>
-                        <th data-field="delete">DELETE</th>
+                        <th data-field="delete">SUPPRIMER</th>
                     </tr>
                     </thead>
 

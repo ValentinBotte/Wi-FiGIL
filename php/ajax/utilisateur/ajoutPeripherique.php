@@ -8,10 +8,10 @@
         try{
             $dateNow = date("Y-m-d");
             if($_SESSION['grade'] == 0){
-                $sql = 'INSERT INTO PERIPHERIQUE (num, num_user, num_prof, libelle, mac, date_ajout, etat) VALUES (null, :id_user, null, :libelle, :mac, :dateNow, 0)';
+                $sql = 'INSERT INTO peripherique (num, num_user, num_prof, libelle, mac, date_ajout, etat) VALUES (null, :id_user, null, :libelle, :mac, :dateNow, 0)';
                 $param = ':id_user';
             }else{
-                $sql = 'INSERT INTO PERIPHERIQUE (num, num_user, num_prof, libelle, mac, date_ajout, etat) VALUES (null, null, :id_prof, :libelle, :mac, :dateNow, 0)';
+                $sql = 'INSERT INTO peripherique (num, num_user, num_prof, libelle, mac, date_ajout, etat) VALUES (null, null, :id_prof, :libelle, :mac, :dateNow, 0)';
                 $param = ':id_prof';
             }
             $convert = convertMac($_POST['mac']);

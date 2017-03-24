@@ -7,7 +7,7 @@
 
     try{
         
-        $req = $bd->prepare("DELETE FROM PORT_ETUDIANT WHERE NUM=:id_user");
+        $req = $bd->prepare("DELETE FROM port_etudiant WHERE NUM=:id_user");
         $req->bindParam(':id_user' , $_POST['id']);
 
         $req->execute();
