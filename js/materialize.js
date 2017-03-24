@@ -2138,7 +2138,7 @@ $(document).ready(function(){
           if (opacityPercent < 0)
             opacityPercent = 0;
 
-          Vel(toast, {left: deltaX, opacity: opacityPercent }, {duration: 50, queue: false, easing: 'easeOutQuad'});
+          //Vel(toast, {left: deltaX, opacity: opacityPercent }, {duration: 50, queue: false, easing: 'easeOutQuad'});
 
         });
 
@@ -2155,7 +2155,7 @@ $(document).ready(function(){
                   if(typeof(completeCallback) === "function") {
                     completeCallback();
                   }
-                  toast.parentNode.removeChild(toast);
+                 // toast.parentNode.removeChild(toast);
                 }
             });
 

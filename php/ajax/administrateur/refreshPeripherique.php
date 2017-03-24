@@ -9,8 +9,8 @@ foreach($req->fetchAll() as $peripherique) {
                     <td>$peripherique[libelle]</td>
                     <td>$peripherique[mac]</td>
                     <td>$peripherique[date_ajout]</td>
-                    <td><i class='material-icons red900' onClick='if(confirm(\"阾es - vous s鹯 ? \"))supprPeripherique($peripherique[num], this)'>delete</i></td>
-                    <td><i class='material-icons' onClick='if(confirm(\"阾es - vous s鹯 ? \"))validePeripherique($peripherique[num], this)'>done</i></td>
+                    <td><i class='material-icons red900' onClick='if(confirm(\"锚tes - vous s没r ? \"))supprPeripherique($peripherique[num], this)'>delete</i></td>
+                    <td><i class='material-icons' onClick='if(confirm(\"锚tes - vous s没r ? \"))validePeripherique($peripherique[num], this)'>done</i></td>
                     <td><a class='waves-effect waves-light btn modal-trigger' onClick='openModal($peripherique[num], \"$peripherique[mac]\", \"$peripherique[nom]\", \"$peripherique[prenom]\", $peripherique[numGroupe])'>COMMANDES</a></td>
                   </tr>";
 }
@@ -22,8 +22,8 @@ foreach($req->fetchAll() as $peripherique) {
                     <td>$peripherique[libelle]</td>
                     <td>$peripherique[mac]</td>
                     <td>$peripherique[date_ajout]</td>
-                    <td><i class='material-icons red900' onClick='if(confirm(\"阾es - vous s鹯 ? \"))supprPeripherique($peripherique[num], this)'>delete</i></td>
-                    <td><i class='material-icons' onClick='if(confirm(\"阾es - vous s鹯 ? \"))validePeripherique($peripherique[num], this)'>done</i></td>
+                    <td><i class='material-icons red900' onClick='if(confirm(\"锚tes - vous s没r ? \"))supprPeripherique($peripherique[num], this)'>delete</i></td>
+                    <td><i class='material-icons' onClick='if(confirm(\"锚tes - vous s没r ? \"))validePeripherique($peripherique[num], this)'>done</i></td>
                     <td><a class='waves-effect waves-light btn modal-trigger' onClick='openModal2($peripherique[num], \"$peripherique[mac]\", \"$peripherique[nom]\", \"$peripherique[prenom]\")'>COMMANDES</a></td>
                   </tr>";
 }

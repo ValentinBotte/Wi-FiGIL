@@ -2,7 +2,8 @@ $(function() {
     
     //Chargement de la page
     refreshPeripheriquesTable();
-    
+    // Gestion affichage mobile du menu
+    $(".button-collapse").sideNav();
 
 });
 
@@ -55,5 +56,3 @@ $(function() {
         }
         
     });
-// Gestion affichage mobile du menu 
-$(".button-collapse").sideNav();

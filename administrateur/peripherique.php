@@ -31,14 +31,14 @@
 
             <div class="container">
 
-            <h5 style="margin-top:50px;">Peripheriques en attente</h5>
+            <h5 style="margin-top:50px;">Périphériques en attentes</h5>
                 <table class="striped centered">
                 <thead>
                   <tr>
                       <th data-field="nom">NOM</th>
                       <th data-field="prenom">PRENOM</th>
                       <th data-field="libelle">LIBELLE</th>
-                      <th data-field="mac">MAC</th>
+                      <th data-field="mac">ADRESSE MAC</th>
                       <th data-field="date_ajout">DATE AJOUT</th>
                       <th data-field="delete">SUPPRIMER</th>
                       <th data-field="valider">VALIDER</th>
@@ -50,14 +50,14 @@
                 </tbody>
                 </table>
 
-                <h5 style="margin-top:50px;">Peripheriques validé</h5>
+                <h5 style="margin-top:50px;">Périphériques validés</h5>
                 <table class="striped centered">
                     <thead>
                     <tr>
                         <th data-field="nom">NOM</th>
                         <th data-field="prenom">PRENOM</th>
                         <th data-field="libelle">LIBELLE</th>
-                        <th data-field="mac">MAC</th>
+                        <th data-field="mac">ADRESSE MAC</th>
                         <th data-field="date_ajout">DATE AJOUT</th>
                         <th data-field="delete">SUPPRIMER</th>
                     </tr>
@@ -72,7 +72,8 @@
 
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+           <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>-->
+            <script src="../js/materialize.js"></script>
             <script src="../js/index.js"></script>
             <script src="../js/actionAdministrateur.js"></script>
 

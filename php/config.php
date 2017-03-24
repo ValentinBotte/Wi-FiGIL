@@ -1,7 +1,7 @@
 <?php
 
     /* URL */
-        $url = "http://localhost/raimon/Wi-FiGIL/";
+        $url = "http://localhost/Wi-FiGIL/";
 
     /* CONNEXION BDD */
         $host = "mysql:host=localhost";

@@ -5,6 +5,8 @@ $(function() {
     refreshProfesseursTable();
     refreshPeripheriqueTable();
     refreshPeripheriqueValideTable();
+    // Gestion affichage mobile du menu
+    $(".button-collapse").sideNav();
 });
 
 
@@ -145,5 +147,4 @@ function openModal2(ip, mac, nom, prenom){
                 }
             });
     }
-// Gestion affichage mobile du menu 
-$(".button-collapse").sideNav();
+
