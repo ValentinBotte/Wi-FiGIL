@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58dad618-32d8-42d8-a925-3deb1608d852" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/index.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrateur/peripherique.php" afterPath="$PROJECT_DIR$/administrateur/peripherique.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/action.js" afterPath="$PROJECT_DIR$/js/action.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/actionAdministrateur.js" afterPath="$PROJECT_DIR$/js/actionAdministrateur.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/ajax/administrateur/openModal.php" afterPath="$PROJECT_DIR$/php/ajax/administrateur/openModal.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/ajax/administrateur/refreshPeripherique.php" afterPath="$PROJECT_DIR$/php/ajax/administrateur/refreshPeripherique.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/ajax/administrateur/refreshPeripheriqueValide.php" afterPath="$PROJECT_DIR$/php/ajax/administrateur/refreshPeripheriqueValide.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/ajax/administrateur/supprPeripherique.php" afterPath="$PROJECT_DIR$/php/ajax/administrateur/supprPeripherique.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/ajax/administrateur/validePeripherique.php" afterPath="$PROJECT_DIR$/php/ajax/administrateur/validePeripherique.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/ajax/utilisateur/ajoutPeripherique.php" afterPath="$PROJECT_DIR$/php/ajax/utilisateur/ajoutPeripherique.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/ajax/utilisateur/refreshPeripheriques.php" afterPath="$PROJECT_DIR$/php/ajax/utilisateur/refreshPeripheriques.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/ajax/utilisateur/supprPeripherique.php" afterPath="$PROJECT_DIR$/php/ajax/utilisateur/supprPeripherique.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ressources/Crebase_GestionWifi.sql" afterPath="$PROJECT_DIR$/ressources/Crebase_GestionWifi.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utilisateur/panel.php" afterPath="$PROJECT_DIR$/utilisateur/panel.php" />
-    </list>
+    <list default="true" id="58dad618-32d8-42d8-a925-3deb1608d852" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -490,12 +474,12 @@
       <workItem from="1490354294536" duration="1746000" />
       <workItem from="1490396483954" duration="4279000" />
       <workItem from="1490479119964" duration="5278000" />
-      <workItem from="1490560730056" duration="1581000" />
+      <workItem from="1490560730056" duration="1652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56481000" />
+    <option name="totallyTimeSpent" value="56552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
