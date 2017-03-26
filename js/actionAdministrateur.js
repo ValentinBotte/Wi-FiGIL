@@ -5,6 +5,7 @@ $(function() {
     refreshProfesseursTable();
     refreshPeripheriqueTable();
     refreshPeripheriqueValideTable();
+    refreshHistorique();
     // Gestion affichage mobile du menu
     $(".button-collapse").sideNav();
 });
@@ -42,6 +43,15 @@ $(function() {
           .done(function( data ) {
                 $('#professeurs').html(data);
           });
+    }
+
+    // Charge l'historique
+
+    function refreshHistorique(){
+        $.post( "../php/ajax/administrateur/refreshHistorique.php")
+            .done(function( data ) {
+                $('#historique').html(data);
+            });
     }
 
     // Change l'etat d'un utilisateur

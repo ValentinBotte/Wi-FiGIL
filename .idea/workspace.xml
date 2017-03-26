@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58dad618-32d8-42d8-a925-3deb1608d852" name="Default" comment="" />
+    <list default="true" id="58dad618-32d8-42d8-a925-3deb1608d852" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/administrateur/historique.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php/ajax/administrateur/refreshHistorique.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/administrateur/header.php" afterPath="$PROJECT_DIR$/administrateur/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/actionAdministrateur.js" afterPath="$PROJECT_DIR$/js/actionAdministrateur.js" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,46 +51,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="supprPeripherique.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/supprPeripherique.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="143" lean-forward="false" selection-start-line="14" selection-start-column="143" selection-end-line="14" selection-end-column="143" />
-              <folding>
-                <marker date="1490562720470" expanded="true" signature="188:239" ph="DELETE FROM " />
-                <marker date="1490562720470" expanded="true" signature="346:475" ph="INSERT INTO historique... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="refreshPeripheriqueValide.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/refreshPeripheriqueValide.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="34" column="163" lean-forward="false" selection-start-line="34" selection-start-column="163" selection-end-line="34" selection-end-column="163" />
-              <folding>
-                <marker date="1490562913164" expanded="true" signature="76:261" ph="SELECT perip... peripherique" />
-                <marker date="1490562913164" expanded="true" signature="326:659" ph="..." />
-                <marker date="1490562913164" expanded="true" signature="326:721" ph="..." />
-                <marker date="1490562913164" expanded="true" signature="326:741" ph="..." />
-                <marker date="1490562913164" expanded="true" signature="326:745" ph="..." />
-                <marker date="1490562913164" expanded="true" signature="326:765" ph="..." />
-                <marker date="1490562913164" expanded="true" signature="326:769" ph="..." />
-                <marker date="1490562913164" expanded="true" signature="326:793" ph="..." />
-                <marker date="1490562913164" expanded="true" signature="326:841" ph="..." />
-                <marker date="1490562913164" expanded="true" signature="868:1057" ph="SELECT perip... peripherique" />
-                <marker date="1490562913164" expanded="true" signature="1122:1410" ph="..." />
-                <marker date="1490562913164" expanded="true" signature="1122:1455" ph="..." />
-                <marker date="1490562913164" expanded="true" signature="1122:1475" ph="..." />
-                <marker date="1490562913164" expanded="true" signature="1122:1517" ph="..." />
-                <marker date="1490562913164" expanded="true" signature="1122:1541" ph="..." />
-                <marker date="1490562913164" expanded="true" signature="1122:1637" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="refreshProfesseurs.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/refreshProfesseurs.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,37 +68,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="action.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/action.js">
+      <file leaf-file-name="refreshHistorique.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/refreshHistorique.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="refreshPeripheriques.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/ajax/utilisateur/refreshPeripheriques.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="153" lean-forward="false" selection-start-line="32" selection-start-column="131" selection-end-line="32" selection-end-column="153" />
+            <state relative-caret-position="340">
+              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
               <folding>
-                <marker date="1490401032319" expanded="true" signature="143:207" ph="SELECT * FRO... peripherique" />
-                <marker date="1490401032319" expanded="true" signature="237:301" ph="SELECT * FRO... peripherique" />
-                <marker date="1490401032319" expanded="true" signature="715:1023" ph="..." />
-                <marker date="1490401032319" expanded="true" signature="715:1042" ph="..." />
-                <marker date="1490401032319" expanded="true" signature="715:1087" ph="..." />
+                <marker date="1490563736151" expanded="true" signature="143:192" ph="SELECT * FRO... historique" />
+                <marker date="1490563736151" expanded="true" signature="271:544" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actionAdministrateur.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="refreshUtilisateurs.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/refreshUtilisateurs.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="42" column="48" lean-forward="false" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+              <folding>
+                <marker date="1490396177929" expanded="true" signature="121:161" ph="SELECT * FRO... port_etudiant" />
+                <marker date="1490396177929" expanded="true" signature="399:881" ph="..." />
+                <marker date="1490396177929" expanded="true" signature="1064:1404" ph="..." />
+                <marker date="1490396177929" expanded="true" signature="1100:1371" ph="..." />
+                <marker date="1490396177929" expanded="true" signature="1480:1812" ph="..." />
+                <marker date="1490396177929" expanded="true" signature="1516:1779" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="actionAdministrateur.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/actionAdministrateur.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="88" column="59" lean-forward="true" selection-start-line="88" selection-start-column="59" selection-end-line="88" selection-end-column="59" />
+            <state relative-caret-position="442">
+              <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -148,7 +118,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="validePeripherique.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="panel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrateur/panel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="historique.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrateur/historique.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="47" column="24" lean-forward="false" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="validePeripherique.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/validePeripherique.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -163,11 +153,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="openModal.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/openModal.php">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/administrateur/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -200,7 +190,6 @@
         <option value="$PROJECT_DIR$/php/ajax/administrateur/supprProfesseur.php" />
         <option value="$PROJECT_DIR$/php/ajax/administrateur/supprUtilisateur.php" />
         <option value="$PROJECT_DIR$/administrateur/panel.php" />
-        <option value="$PROJECT_DIR$/administrateur/header.php" />
         <option value="$PROJECT_DIR$/php/dump.php" />
         <option value="$PROJECT_DIR$/php/config.php" />
         <option value="$PROJECT_DIR$/js/materialize.js" />
@@ -215,9 +204,12 @@
         <option value="$PROJECT_DIR$/administrateur/peripherique.php" />
         <option value="$PROJECT_DIR$/php/ajax/administrateur/validePeripherique.php" />
         <option value="$PROJECT_DIR$/php/ajax/administrateur/supprPeripherique.php" />
-        <option value="$PROJECT_DIR$/js/actionAdministrateur.js" />
         <option value="$PROJECT_DIR$/php/ajax/administrateur/refreshPeripherique.php" />
         <option value="$PROJECT_DIR$/php/ajax/administrateur/refreshPeripheriqueValide.php" />
+        <option value="$PROJECT_DIR$/administrateur/historique.php" />
+        <option value="$PROJECT_DIR$/php/ajax/administrateur/refreshHistorique.php" />
+        <option value="$PROJECT_DIR$/administrateur/header.php" />
+        <option value="$PROJECT_DIR$/js/actionAdministrateur.js" />
       </list>
     </option>
   </component>
@@ -389,12 +381,12 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Wi-FiGIL\js" />
-      <recent name="C:\xampp\htdocs\Wi-FiGIL\administrateur" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Wi-FiGIL\php\ajax\administrateur" />
+      <recent name="C:\xampp\htdocs\Wi-FiGIL\administrateur" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Wi-FiGIL\js" />
       <recent name="C:\xampp\htdocs\Wi-FiGIL\administrateur" />
     </key>
   </component>
@@ -474,12 +466,12 @@
       <workItem from="1490354294536" duration="1746000" />
       <workItem from="1490396483954" duration="4279000" />
       <workItem from="1490479119964" duration="5278000" />
-      <workItem from="1490560730056" duration="1652000" />
+      <workItem from="1490560730056" duration="2670000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56552000" />
+    <option name="totallyTimeSpent" value="57570000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
@@ -515,27 +507,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/ajax/utilisateur/refreshPeripheriques.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <marker date="1490401032319" expanded="true" signature="143:207" ph="SELECT * FRO... peripherique" />
-            <marker date="1490401032319" expanded="true" signature="237:301" ph="SELECT * FRO... peripherique" />
-            <marker date="1490401032319" expanded="true" signature="715:1023" ph="..." />
-            <marker date="1490401032319" expanded="true" signature="715:1042" ph="..." />
-            <marker date="1490401032319" expanded="true" signature="715:1087" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/supprUtilisateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/administrateur/panel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -547,6 +518,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -578,6 +550,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <folding>
+            <marker date="1490396178048" expanded="true" signature="177:232" ph="SELECT * FRO... port_etudiant" />
+            <marker date="1490396178048" expanded="true" signature="1010:1067" ph="SELECT * FRO... port_professeur" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -671,6 +647,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -697,33 +674,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/administrateur/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="63" lean-forward="true" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utilisateur/panel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="49" column="47" lean-forward="false" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/refreshUtilisateurs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="42" column="48" lean-forward="false" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
-          <folding>
-            <marker date="1490396177929" expanded="true" signature="121:161" ph="SELECT * FRO... port_etudiant" />
-            <marker date="1490396177929" expanded="true" signature="399:881" ph="..." />
-            <marker date="1490396177929" expanded="true" signature="1064:1404" ph="..." />
-            <marker date="1490396177929" expanded="true" signature="1100:1371" ph="..." />
-            <marker date="1490396177929" expanded="true" signature="1480:1812" ph="..." />
-            <marker date="1490396177929" expanded="true" signature="1516:1779" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -738,6 +692,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <folding>
+            <marker date="1490396178048" expanded="true" signature="177:232" ph="SELECT * FRO... port_etudiant" />
+            <marker date="1490396178048" expanded="true" signature="1010:1067" ph="SELECT * FRO... port_professeur" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -846,34 +804,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js" />
-    <entry file="file://$PROJECT_DIR$/administrateur/panel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/action.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/actionAdministrateur.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="88" column="59" lean-forward="true" selection-start-line="88" selection-start-column="59" selection-end-line="88" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/administrateur/peripherique.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="76" column="50" lean-forward="false" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -903,17 +837,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/refreshProfesseurs.php">
+    <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/supprPeripherique.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        <state relative-caret-position="238">
+          <caret line="14" column="143" lean-forward="false" selection-start-line="14" selection-start-column="143" selection-end-line="14" selection-end-column="143" />
           <folding>
-            <marker date="1490396177917" expanded="true" signature="143:185" ph="SELECT * FRO... port_professeur" />
-            <marker date="1490396177917" expanded="true" signature="652:1082" ph="..." />
-            <marker date="1490396177917" expanded="true" signature="1195:1562" ph="..." />
-            <marker date="1490396177917" expanded="true" signature="1235:1525" ph="..." />
-            <marker date="1490396177917" expanded="true" signature="1622:1981" ph="..." />
-            <marker date="1490396177917" expanded="true" signature="1662:1944" ph="..." />
+            <marker date="1490562720470" expanded="true" signature="188:239" ph="DELETE FROM " />
+            <marker date="1490562720470" expanded="true" signature="346:475" ph="INSERT INTO historique... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/validePeripherique.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <marker date="1490562511790" expanded="true" signature="188:247" ph="UPDATE perip... " />
+            <marker date="1490562511790" expanded="true" signature="354:454" ph="INSERT INTO historique... " />
+            <marker date="1490562511790" expanded="true" signature="354:455" ph="INSERT INTO historique... " />
+            <marker date="1490562511790" expanded="true" signature="354:489" ph="INSERT INTO historique... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrateur/panel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrateur/peripherique.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="76" column="50" lean-forward="false" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/refreshUtilisateurs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="48" lean-forward="false" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+          <folding>
+            <marker date="1490396177929" expanded="true" signature="121:161" ph="SELECT * FRO... port_etudiant" />
+            <marker date="1490396177929" expanded="true" signature="399:881" ph="..." />
+            <marker date="1490396177929" expanded="true" signature="1064:1404" ph="..." />
+            <marker date="1490396177929" expanded="true" signature="1100:1371" ph="..." />
+            <marker date="1490396177929" expanded="true" signature="1480:1812" ph="..." />
+            <marker date="1490396177929" expanded="true" signature="1516:1779" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrateur/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/refreshHistorique.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding>
+            <marker date="1490563736151" expanded="true" signature="143:192" ph="SELECT * FRO... historique" />
+            <marker date="1490563736151" expanded="true" signature="271:544" ph="..." />
           </folding>
         </state>
       </provider>
@@ -943,27 +936,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/supprPeripherique.php">
+    <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/refreshProfesseurs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="143" lean-forward="false" selection-start-line="14" selection-start-column="143" selection-end-line="14" selection-end-column="143" />
+        <state relative-caret-position="306">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
           <folding>
-            <marker date="1490562720470" expanded="true" signature="188:239" ph="DELETE FROM " />
-            <marker date="1490562720470" expanded="true" signature="346:475" ph="INSERT INTO historique... " />
+            <marker date="1490396177917" expanded="true" signature="143:185" ph="SELECT * FRO... port_professeur" />
+            <marker date="1490396177917" expanded="true" signature="652:1082" ph="..." />
+            <marker date="1490396177917" expanded="true" signature="1195:1562" ph="..." />
+            <marker date="1490396177917" expanded="true" signature="1235:1525" ph="..." />
+            <marker date="1490396177917" expanded="true" signature="1622:1981" ph="..." />
+            <marker date="1490396177917" expanded="true" signature="1662:1944" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/ajax/administrateur/validePeripherique.php">
+    <entry file="file://$PROJECT_DIR$/administrateur/historique.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <marker date="1490562511790" expanded="true" signature="188:247" ph="UPDATE perip... " />
-            <marker date="1490562511790" expanded="true" signature="354:454" ph="INSERT INTO historique... " />
-            <marker date="1490562511790" expanded="true" signature="354:455" ph="INSERT INTO historique... " />
-            <marker date="1490562511790" expanded="true" signature="354:489" ph="INSERT INTO historique... " />
-          </folding>
+        <state relative-caret-position="348">
+          <caret line="47" column="24" lean-forward="false" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/actionAdministrateur.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
