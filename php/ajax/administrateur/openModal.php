@@ -11,11 +11,7 @@
         $nom = $_POST['nom'];
         $prenom = $_POST['prenom'];
         $groupe= "";
-        try{
-            $groupe = $_POST['groupe'];
-        }catch(Exception $e){
-            print_r($e);
-        };
+        $groupe = $_POST['groupe'];
 
         $mactiret = substr($mac,0,2)."-".substr($mac,2,2)."-".substr($mac,4,2)."-".substr($mac,6,2)."-".substr($mac,8,2)."-".substr($mac,10,2);
         $macpoint = substr($mac,0,2).":".substr($mac,2,2).":".substr($mac,4,2).":".substr($mac,6,2).":".substr($mac,8,2).":".substr($mac,10,2);

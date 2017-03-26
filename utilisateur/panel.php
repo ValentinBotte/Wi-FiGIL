@@ -47,7 +47,7 @@
             <thead>
               <tr>
                   <th data-field="libelle">LIBELLE</th>
-                  <th data-field="mac">MAC</th>
+                  <th data-field="mac">ADRESSE MAC</th>
                   <th data-field="date_ajout">AJOUTE LE</th>
                   <th data-field="etat">ETAT</th>
                   <th data-field="supprimer">ACTION</th>

@@ -6,7 +6,7 @@
 
     if(checkMac($_POST['mac'])){
         try{
-            $dateNow = date("Y-m-d");
+            $dateNow = date("Y-m-d H:i:s");
             if($_SESSION['grade'] == 0){
                 $sql = 'INSERT INTO peripherique (num, num_user, num_prof, libelle, mac, date_ajout, etat) VALUES (null, :id_user, null, :libelle, :mac, :dateNow, 0)';
                 $param = ':id_user';
@@ -21,6 +21,14 @@
             $req->bindParam(':mac', $convert);
             $req->bindParam(':dateNow', $dateNow);
 
+            $req->execute();
+
+            $sql = 'INSERT INTO historique (id, nom, prenom, mac, date_historique, libelle) VALUES (null, :nom, :prenom, :mac, :dateNow, "demande")';
+            $req = $bd->prepare($sql);
+            $req->bindParam(':nom', $_SESSION['user']['nom']);
+            $req->bindParam(':prenom', $_SESSION['user']['prenom']);
+            $req->bindParam(':mac', $convert);
+            $req->bindParam(':dateNow', $dateNow);
             $req->execute();
 
             $messageAdmin = "Bonjour,\n\n Vous avez reçu une nouvelle demande d'accès aux bornes Wi-Fi envoyé par : ".$_SESSION['user']['nom']." ".$_SESSION['user']['prenom'] ." le ".date("Y-m-d");

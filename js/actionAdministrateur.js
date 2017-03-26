@@ -86,8 +86,8 @@ $(function() {
 
     // Suppression d'un péripherique
 
-    function supprPeripherique(id, elem){
-        $.post( "../php/ajax/administrateur/supprPeripherique.php", { id: id })
+    function supprPeripherique(id, mac, nom, prenom, elem){
+        $.post( "../php/ajax/administrateur/supprPeripherique.php", { id: id, mac: mac, nom: nom, prenom: prenom})
             .done(function( data ) {
                 if(data.status === "success"){
                     Materialize.toast(data.response, 4000);
@@ -136,8 +136,8 @@ function openModal2(ip, mac, nom, prenom){
 
     // validation d'un peripherique
 
-    function validePeripherique(id, elem){
-        $.post( "../php/ajax/administrateur/validePeripherique.php", { id: id })
+    function validePeripherique(id, nom, mac, prenom, elem){
+        $.post( "../php/ajax/administrateur/validePeripherique.php", { id: id, nom: nom, mac: mac, prenom: prenom})
             .done(function( data ) {
                 if(data.status === "success"){
                     Materialize.toast(data.response, 4000);

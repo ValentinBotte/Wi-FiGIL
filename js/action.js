@@ -21,8 +21,8 @@ $(function() {
 
     // Suppression d'un peripherique
 
-    function supprPeripherique(id, elem){   
-        $.post( "../php/ajax/utilisateur/supprPeripherique.php", { id: id })
+    function supprPeripherique(id, mac, elem){
+        $.post( "../php/ajax/utilisateur/supprPeripherique.php", { id: id, mac: mac})
           .done(function( data ) {
                 if(data.status === "success"){
                     Materialize.toast(data.response, 4000);

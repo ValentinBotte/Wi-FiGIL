@@ -30,7 +30,7 @@
                 <td>$peripherique[mac]</td>
                 <td>$peripherique[date_ajout]</td>
                 <td>$etat</td>
-                <td><i class='material-icons red900' onClick='if(confirm(\"ête-vous sûr?\"))supprPeripherique($peripherique[num], this)'>delete</i></td>
+                <td><i class='material-icons red900' onClick='if(confirm(\"êtes-vous sûr?\"))supprPeripherique($peripherique[num], \"$peripherique[mac]\", this)'>delete</i></td>
               </tr>";
       }
 
